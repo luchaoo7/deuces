@@ -5,6 +5,10 @@ A pure Python poker hand evaluation library
 
     [ 2 ❤ ] , [ 2 ♠ ]
     
+## Python Vesion
+
+Now compatible with python 3.5
+
 ## Installation
 
 ```
