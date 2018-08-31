@@ -264,9 +264,9 @@ class LookupTable(object):
         so no need to sort when done! Perfect.
         """
         t = (bits | (bits - 1)) + 1 
-        next = t | ((((t & -t) / (bits & -bits)) >> 1) - 1)  
+        next = t | ((((t & -t) // (bits & -bits)) >> 1) - 1)  
         yield next
         while True:
             t = (next | (next - 1)) + 1 
-            next = t | ((((t & -t) / (next & -next)) >> 1) - 1)
+            next = t | ((((t & -t) // (next & -next)) >> 1) - 1)
             yield next

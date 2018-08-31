@@ -189,6 +189,10 @@ class Card ():
 
         r = Card.STR_RANKS[rank_int]
 
+        #Refactoring "s" of type <class 'bytes'>
+        #s = s.decode("utf-8")
+        s = s.decode()
+
         return " [ " +r+ " " +s+ " ] "
 
     @staticmethod
